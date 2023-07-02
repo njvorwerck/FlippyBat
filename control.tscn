@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3 uid="uid://bcg64y5j6o6wb"]
+
+[ext_resource type="Script" path="res://Blah.cs" id="1_f2et8"]
+[ext_resource type="Script" path="res://Title.cs" id="2_4clpg"]
+[ext_resource type="Theme" uid="uid://4adgx4jamcma" path="res://control.tres" id="3_up38l"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 127.0
+offset_top = 91.0
+offset_right = 964.0
+offset_bottom = 528.0
+script = ExtResource("1_f2et8")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel"]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 16.0
+offset_right = 207.0
+offset_bottom = 56.0
+scale = Vector2(1.70255, 1.38443)
+text = "This is a cool game"
+fit_content = true
+script = ExtResource("2_4clpg")
+metadata/_edit_group_ = true
+
+[node name="Button" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 278.0
+offset_top = 160.0
+offset_right = 348.0
+offset_bottom = 192.0
+theme = ExtResource("3_up38l")
+text = "Button"
